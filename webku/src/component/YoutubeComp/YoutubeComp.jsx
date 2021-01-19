@@ -1,7 +1,6 @@
 import React from "react";
 import "./YoutubeComp.css";
 import thumb1 from "./images/img1.jpg";
-import YoutubeComppage from '../../container/pages/YoutubeComp/Youtubecomppage'
 
 
 const YoutubeComp = (props) => {
@@ -17,7 +16,7 @@ const YoutubeComp = (props) => {
   );
 };
 
-YoutubeComppage.defaultProps = {
+YoutubeComp.defaultProps = {
   time: "00.00",
   title: "ini judul",
   desc: "ini descripsi",

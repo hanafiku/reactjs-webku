@@ -1,7 +1,7 @@
 import React, { Component,Fragment } from 'react'
 import YoutubeComp from '../../../component/YoutubeComp/YoutubeComp'
 
-class YoutubeComp extends Component {
+class YoutubeComppage extends Component {
     render() {
         return (
             <Fragment>
@@ -16,4 +16,4 @@ class YoutubeComp extends Component {
         )
     }
 }
-export default YoutubeComp;
+export default YoutubeComppage;

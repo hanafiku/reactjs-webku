@@ -61,6 +61,10 @@ class BlogPost extends Component {
     })
   }
 
+  handleDetail = (id) =>{
+    this.props.history.push(`/detail-post/${id}`)
+  }
+
   handleRemove = (data) => {
     axios.delete(`http://localhost:3004/posts/${data}`).then((res) => {
       this.getPostApi();
@@ -130,6 +134,7 @@ class BlogPost extends Component {
               data={post}
               hapus={this.handleRemove}
               update={this.handleUpdate}
+              goDetail={this.handleDetail}
             />
           );
         })}

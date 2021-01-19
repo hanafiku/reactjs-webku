@@ -5,6 +5,7 @@ import YoutubeComppage from "../pages/YoutubeComp/Youtubecomppage";
 import Product from "../pages/Product/Product";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import './Home.css'
+import DetailPost from "../pages/BlogPost/DetailPost/DetailPost";
 
 class Home extends Component {
 
@@ -18,6 +19,7 @@ class Home extends Component {
                 <Link to="/youtube">Youtube</Link>
             </div>
           <Route path="/" exact component={BlogPost} />
+          <Route path="/detail-post/:postid"component={DetailPost}/>
           <Route path="/product" component={Product} />
           <Route path="/youtube" component={YoutubeComppage} />
         </Fragment>
